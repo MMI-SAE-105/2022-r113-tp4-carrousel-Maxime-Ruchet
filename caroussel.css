@@ -6,3 +6,12 @@ img{max-width:100%}
     left:-9999px
         
         }
+
+        .caroussel {
+
+            max-width: 500px;
+            aspect-ratio:3/2;
+            position: relative;
+            margin:auto;
+                
+                }
