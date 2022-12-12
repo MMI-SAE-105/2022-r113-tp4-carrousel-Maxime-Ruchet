@@ -7,11 +7,27 @@ img{max-width:100%}
         
         }
 
-        .caroussel {
+.caroussel {
 
-            max-width: 500px;
-            aspect-ratio:3/2;
-            position: relative;
-            margin:auto;
+    max-width: 500px;
+    aspect-ratio:3/2;
+    position: relative;
+    margin:auto;
                 
-                }
+         }
+@supports not(aspect-ratio:3/2){
+	
+.caroussel{padding-top: 66.60%}	
+                    
+        }
+
+.caroussel img {
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    outline: 1px solid transparent;
+    backface-visibility: hidden;
+    transition: 1s opacity	
+        }
